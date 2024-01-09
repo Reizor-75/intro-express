@@ -48,9 +48,9 @@ app.set('view engine', 'ejs')
 
 // mount routes
   //first route
-  app.get("/", function(req, res){
-    res.send("<h1>Second Try<h1>");
-  });
+  // app.get("/", function(req, res){
+  //   res.send("<h1>Second Try<h1>");
+  // });
 
   //refactoring route
   // app.get("/students", function(req, res){
@@ -62,6 +62,10 @@ app.set('view engine', 'ejs')
       students: students
     })
   })
+
+  app.get("/", function(req, res){
+    res.redirect("/students");
+  });
 
 // tell the app to listen on port 3000
 
