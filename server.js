@@ -85,6 +85,7 @@ app.set("view engine", "ejs");
 // mount routes
 app.get('/iceCreams', function(req, res) {
   res.render('iceCreams/index', {
+    iceCreams:iceCreams    
   })
 })
 

@@ -8,6 +8,11 @@
 <body>
   <h1>Ice Cream Flavors</h1>
   <ul>
+    <% iceCreams.forEach(iceCream => { %>
+      <li>
+        <%= iceCream.flavor %>
+      </li>
+    <%}); %>
   </ul>
 </body>
 </html>
