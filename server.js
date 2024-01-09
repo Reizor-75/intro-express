@@ -2,7 +2,8 @@
 import express from "express";
 import { todos } from "./data/todo-data.js"; 
 import { students } from "./data/students-data.js";
-import { iceCreams } from "./data/iceCreams-data.js";
+import {iceCreams} from "./data/iceCreams-data.js";
+import { favoriteFlavor } from "./data/iceCreams-data.js";
 //create Express app
 const app = express();
 
@@ -85,7 +86,8 @@ app.set("view engine", "ejs");
 // mount routes
 app.get('/iceCreams', function(req, res) {
   res.render('iceCreams/index', {
-    iceCreams:iceCreams    
+    iceCreams:iceCreams,   
+    favoriteFlavor:favoriteFlavor 
   })
 })
 

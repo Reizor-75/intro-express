@@ -6,7 +6,7 @@ const iceCreams = [
   {id: 5, flavor: "Rocky Road"},
 ];
 
-const favoriteFlavor = iceCreams[3]; //green tea
+const favoriteFlavor = iceCreams[3].flavor; //green tea
 
 export{
   iceCreams,
