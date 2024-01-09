@@ -40,15 +40,22 @@ app.listen(3000, function(){
 
 //students
 // configure the app (app.set)
-
-
+app.set('view engine', 'ejs')
 
 // mount Middleware (app.use)
 
 
 
 // mount routes
+  //first route
+  app.get("/", function(req, res){
+    res.send("<h1>Second Try<h1>");
+  });
 
+  //refactoring route
+  app.get("/students", function(req, res){
+    res.render("students")
+  });
 
 
 // tell the app to listen on port 3000
